@@ -2,7 +2,7 @@ export default function TermsOfService() {
   return (
     <div className="container mx-auto px-4 py-24">
       <h1 className="text-3xl font-bold mb-8 text-white">Termos de Uso</h1>
-      
+
       <div className="prose prose-invert max-w-none">
         <p className="text-gray-300 mb-6">
           Ao acessar e usar nossos serviços, você aceita e concorda em cumprir os termos e condições estabelecidos neste acordo.
@@ -10,7 +10,7 @@ export default function TermsOfService() {
 
         <h2 className="text-2xl font-semibold mb-4 text-white mt-8">1. Serviços</h2>
         <p className="text-gray-300 mb-6">
-          Fornecemos acesso a conteúdo de streaming de TV e vídeo através de nossa plataforma. O serviço é fornecido "como está" e "conforme disponível".
+          Fornecemos acesso a conteúdo de streaming de TV e vídeo através de nossa plataforma. O serviço é fornecido &quot;como está&quot; e &quot;conforme disponível&quot;.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4 text-white mt-8">2. Conta do Usuário</h2>

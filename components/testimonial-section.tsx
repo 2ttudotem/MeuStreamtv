@@ -7,43 +7,43 @@ const testimonials = [
     location: "São Paulo, SP",
     avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Melhor serviço de IPTV que já usei! Qualidade HD impressionante e zero travamentos."
+    text: "Melhor serviço de IPTV que já usei! Qualidade HD impressionante e zero travamentos.",
   },
   {
     name: "Ana Santos",
     location: "Rio de Janeiro, RJ",
     avatar: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Atendimento excelente e canais sempre funcionando. Recomendo muito!"
+    text: "Atendimento excelente e canais sempre funcionando. Recomendo muito!",
   },
   {
     name: "Pedro Costa",
     location: "Belo Horizonte, MG",
     avatar: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Instalação super fácil e rápida. O suporte responde na hora quando preciso."
+    text: "Instalação super fácil e rápida. O suporte responde na hora quando preciso.",
   },
   {
     name: "Mariana Lima",
     location: "Curitiba, PR",
     avatar: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Excelente variedade de canais! Uso no celular, tablet e TV. Imagem perfeita sempre."
+    text: "Excelente variedade de canais! Uso no celular, tablet e TV. Imagem perfeita sempre.",
   },
   {
     name: "Roberto Alves",
     location: "Salvador, BA",
     avatar: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Melhor custo-benefício! Muitos canais em HD e filmes atualizados diariamente."
+    text: "Melhor custo-benefício! Muitos canais em HD e filmes atualizados diariamente.",
   },
   {
     name: "Fernanda Santos",
     location: "Florianópolis, SC",
     avatar: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     rating: 5,
-    text: "Assinei o plano trimestral e estou muito satisfeita. Vale cada centavo!"
-  }
+    text: "Assinei o plano trimestral e estou muito satisfeita. Vale cada centavo!",
+  },
 ];
 
 export default function TestimonialSection() {
@@ -58,11 +58,10 @@ export default function TestimonialSection() {
             O que dizem nossos assinantes
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Mais de 10.000 clientes já aproveitam a melhor experiência em TV online. 
-            Veja alguns depoimentos:
+            Mais de 10.000 clientes já aproveitam a melhor experiência em TV online. Veja alguns depoimentos:
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
@@ -99,7 +98,7 @@ export default function TestimonialSection() {
                 </div>
               </div>
               <p className="text-gray-300 italic">
-                "{testimonial.text}"
+                &ldquo;{testimonial.text}&rdquo;
               </p>
             </div>
           ))}

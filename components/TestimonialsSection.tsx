@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
   const showPrevTestimonials = () => {
     if (!isAnimating) {
       setIsAnimating(true);
-      setCurrentIndex((prevIndex) => 
+      setCurrentIndex((prevIndex) =>
         prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
       );
       setTimeout(() => setIsAnimating(false), 500);
@@ -60,9 +60,9 @@ export default function TestimonialsSection() {
   };
 
   useEffect(() => {
-    const interval = setInterval(showNextTestimonials, 10000); // Increased from 5000 to 10000 (10 seconds)
+    const interval = setInterval(showNextTestimonials, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [showNextTestimonials]);
 
   return (
     <section className="bg-black py-12 border-t border-violet-900/20">
@@ -70,7 +70,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-white">O que nossos clientes dizem</h2>
         </div>
-        
+
         <div className="max-w-3xl mx-auto relative">
           <button
             onClick={showPrevTestimonials}
@@ -80,13 +80,10 @@ export default function TestimonialsSection() {
             <ChevronLeft className="h-5 w-5" />
           </button>
 
-          <div 
-            ref={testimonialRef}
-            className="overflow-hidden px-12"
-          >
-            <div className={`transition-opacity duration-500 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
+          <div ref={testimonialRef} className="overflow-hidden px-12">
+            <div className={`transition-opacity duration-500 ${isAnimating ? "opacity-0" : "opacity-100"}`}>
               <p className="text-gray-300 text-lg italic text-center mb-4">
-                "{testimonials[currentIndex].text}"
+                &ldquo;{testimonials[currentIndex].text}&rdquo;
               </p>
               <p className="text-violet-400 text-sm text-center">
                 {testimonials[currentIndex].name} - {testimonials[currentIndex].location}
