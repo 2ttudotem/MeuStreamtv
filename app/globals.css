@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 267 35% 12%;
+    --card-foreground: 0 0% 100%;
+    --popover: 267 35% 12%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 267 75% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 267 35% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 267 35% 12%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 267 35% 12%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 267 35% 12%;
+    --input: 267 35% 12%;
+    --ring: 267 75% 60%;
+    --radius: 1rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.glass-effect {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(38, 38, 38, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: var(--radius);
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: calc(var(--radius) + 2px);
+  background: linear-gradient(45deg, #8b5cf6, #a855f7);
+  z-index: -1;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+.feature-card {
+  @apply bg-[#1a1a1a] rounded-xl p-6 border border-violet-900/20;
+}
+
+.pricing-card {
+  @apply bg-[#1a1a1a] rounded-xl p-8 border border-violet-900/20;
+}
+
+.testimonial-card {
+  @apply bg-[#1a1a1a] rounded-xl p-6 border border-violet-900/20;
+}
