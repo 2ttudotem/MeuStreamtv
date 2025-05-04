@@ -60,9 +60,11 @@ export default function TestimonialsSection() {
   };
 
   useEffect(() => {
-    const interval = setInterval(showNextTestimonials, 10000);
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    }, 10000);
     return () => clearInterval(interval);
-  }, [showNextTestimonials]);
+  }, []);
 
   return (
     <section className="bg-black py-12 border-t border-violet-900/20">
