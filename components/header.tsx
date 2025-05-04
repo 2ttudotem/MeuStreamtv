@@ -61,18 +61,18 @@ export default function Header() {
           </nav>
 
           {/* CTA Button - Shown on both mobile and desktop */}
-          <Button 
-            asChild
-            className="bg-violet-600 hover:bg-violet-700 text-white rounded-full px-6"
-            onClick={() => {
-              const advantagesSection = document.querySelector('#features');
-              if (advantagesSection) {
-                advantagesSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            }}
-          >
-            <a href="#features">Assinar</a>
-          </Button>
+         <Button 
+  asChild
+  className="bg-violet-600 hover:bg-violet-700 text-white rounded-full px-6"
+>
+  <a
+    href="https://wa.me/5548992129200"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Assinar
+  </a>
+</Button>
         </div>
       </div>
     </header>

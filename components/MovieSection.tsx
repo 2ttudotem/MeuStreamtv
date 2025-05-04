@@ -149,7 +149,7 @@ export default function MovieSection() {
           
           <div 
             ref={moviesRef}
-            className="flex overflow-x-auto gap-6 py-6 px-8 hide-scrollbar snap-x snap-mandatory"
+            className="flex overflow-x-auto gap-6 py-6 px-8 hide-scrollbar snap-x snap-mandatory justify-center md:justify-start"
           >
             {movies.map((movie, index) => (
               <div key={index} className="min-w-[250px] max-w-[250px] snap-start group">
