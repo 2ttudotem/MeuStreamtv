@@ -4,12 +4,12 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const messages = [
-  '🔥 João (SP) acabou de assinar o plano de 1 mês!',
-  '✨ Carla (RJ) garantiu 3 meses de acesso!',
-  '🚀 Marcos (MG) ativou o plano de 6 meses!',
-  '🏆 Ana (BA) assinou o plano de 1 ano!',
-  '🎉 Pedro (PR) fez uma nova assinatura mensal!',
-  '💥 Juliana (SC) fechou o pacote de 3 meses!',
+  '🔥 João SP acabou de assinar o plano de 1 mês!',
+  '✨ Carla RJ garantiu 3 meses de acesso!',
+  '🚀 Marcos MG ativou o plano de 6 meses!',
+  '🏆 Ana BA assinou o plano de 1 ano!',
+  '🎉 Pedro PR fez uma nova assinatura mensal!',
+  '💥 Juliana SC fechou o pacote de 3 meses!',
 ];
 
 export default function CustomerAlert() {
@@ -39,7 +39,7 @@ export default function CustomerAlert() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="rounded-lg bg-violet-700 px-4 py-3 text-white shadow-lg"
+            className="rounded-lg bg-green-700 px-4 py-3 text-white shadow-lg"
           >
             {messages[currentMessage]}
           </motion.div>
