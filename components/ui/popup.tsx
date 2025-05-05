@@ -34,7 +34,7 @@ const PopupContent = React.forwardRef<
     <DialogPrimitive.Content
       ref={ref}
       className={cn(
-        "text-xs fixed left-[50%] top-[50%] z-50 grid w-full max-w-sm max-h-screen overflow-y-auto translate-x-[-50%] translate-y-[-50%] gap-3 border border-violet-800/40 bg-black p-4 shadow-lg duration-200 rounded-md",
+        "fixed left-1/2 top-1/2 z-50 grid w-full max-w-sm max-h-screen overflow-y-auto translate-x-[-50%] translate-y-[-50%] gap-3 border border-violet-800/40 bg-black p-4 shadow-lg duration-200 rounded-md text-xs text-gray-200", // <== forçando fonte pequena e cor clara
         className
       )}
       {...props}
