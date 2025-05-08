@@ -6,6 +6,7 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import CustomerAlert from '@/components/customer-alert';
 import MobileFooterCarousel from '@/components/MobileFooterCarousel';
 import HowItWorks from '@/components/how-it-works';
+import WhatsappButton from '@/components/WhatsappButton'; // ✅ novo import
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <PricingSection />
       <TestimonialsSection />
       <MobileFooterCarousel />
+      <WhatsappButton /> {/* ✅ botão fixo no mobile */}
     </div>
   );
 }
