@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 
 const movies = [
-  { image: "https://i.pinimg.com/736x/13/59/ae/1359aed33f16bfed80c4dad1980e1070.jpg", title: "Karate Kid" },
+  { image: "https://i.pinimg.com/736x/de/57/4d/de574d0c8983adfe3a2e1ecacd3406ee.jpg", title: "Karate Kid" },
   { image: "https://i.pinimg.com/736x/83/b7/49/83b749d9fda276d2174aba2061b00429.jpg", title: "Superman: Legacy" },
   { image: "https://i.pinimg.com/736x/0e/22/65/0e2265ed9824f1430d6b044e74df4533.jpg", title: "Duna: Parte 2" },
   { image: "https://i.pinimg.com/736x/06/3c/cd/063ccd1c28a7f67084942ffba71a94a9.jpg", title: "Furiosa" },
